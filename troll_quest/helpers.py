@@ -8,5 +8,10 @@ def start_menu():
     startgame = 0
     while startgame != "1" and startgame != "q":
         startgame = input("Enter 1 or q: ")
+        if startgame == "1":
+            intro_screen()
     return startgame
 
+#Intro Screen
+def intro_screen():
+    print("Welcome to the Cave!")
